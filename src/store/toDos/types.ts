@@ -1,5 +1,5 @@
 import { ToDo } from "../../types";
 
-export interface ToDoState {
+export interface ToDosState {
   toDos: ToDo[];
 }
