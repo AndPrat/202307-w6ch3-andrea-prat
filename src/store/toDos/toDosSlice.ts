@@ -1,8 +1,8 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { ToDo } from "../../types";
-import { ToDoState } from "./types";
+import { ToDosState } from "./types";
 
-const initialToDosState: ToDoState = {
+const initialToDosState: ToDosState = {
   toDos: [],
 };
 
@@ -13,13 +13,13 @@ const toDosSlice = createSlice({
     loadToDos: (
       _currentToDosState,
       action: PayloadAction<ToDo[]>,
-    ): ToDoState => ({
+    ): ToDosState => ({
       toDos: action.payload,
     }),
     deleteToDo: (
       currentToDosState,
       action: PayloadAction<number>,
-    ): ToDoState => ({
+    ): ToDosState => ({
       toDos: currentToDosState.toDos.filter(
         (toDo) => toDo.id !== action.payload,
       ),

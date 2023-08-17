@@ -4,12 +4,12 @@ import {
   loadToDosActionCreator,
   toDosReducer,
 } from "./toDosSlice";
-import { ToDoState } from "./types";
+import { ToDosState } from "./types";
 
 describe("Given a toDosReducer", () => {
   describe("When it receives a loadToDos reducer", () => {
     test("Then it should return a new state with the received two toDos", () => {
-      const currentToDosState: ToDoState = { toDos: [] };
+      const currentToDosState: ToDosState = { toDos: [] };
 
       const loadToDosAction = loadToDosActionCreator(toDosListMock);
 
@@ -21,7 +21,7 @@ describe("Given a toDosReducer", () => {
 
   describe("When it recives a deleteToDo reducer", () => {
     test("Then it should return a new state without the toDo task with number id 3 ", () => {
-      const currentToDosState: ToDoState = { toDos: toDosListMock };
+      const currentToDosState: ToDosState = { toDos: toDosListMock };
       const toDoToDeleteId = 3;
 
       const deleteToDoAction = deleteToDoActionCreator(toDoToDeleteId);
