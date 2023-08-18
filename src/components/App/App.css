@@ -1,0 +1,10 @@
+.container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #08177b;
+}
