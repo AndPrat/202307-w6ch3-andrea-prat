@@ -1,0 +1,33 @@
+.toDo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #08177b;
+}
+
+.toDo-card__name {
+  color: #18299c;
+  padding: 10px;
+}
+
+.toDo-card__text {
+  color: #18299c;
+  font-size: 1.2rem;
+}
+
+.toDo-card__button {
+  color: #18299c;
+  border-radius: 10px;
+  border: 2px solid #08177b;
+  padding: 15px;
+  background-color: transparent;
+  width: 60px;
+}
+
+h2 {
+  margin: 0;
+}

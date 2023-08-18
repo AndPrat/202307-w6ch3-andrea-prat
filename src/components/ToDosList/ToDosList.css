@@ -1,0 +1,14 @@
+.toDos-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
